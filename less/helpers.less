@@ -1,0 +1,51 @@
+body {
+  transition: 0.4s all ease-in-out !important;
+}
+
+.logo-heading {
+  &.active {
+    color: pink;
+  }
+}
+header {
+  transition: 0.4s all ease-in-out;
+}
+
+.darkmode {
+  background: #24222d;
+  color: #fcf4ef;
+  a {
+    color: #fcf4ef !important;
+  }
+}
+
+.body-hide {
+  h1,
+  a,
+  p,
+  h2,
+  h4,
+  h3,
+  img,
+  nav,
+  .btn,
+  header {
+    display: none !important;
+  }
+  * {
+    border: none !important;
+  }
+  .fullscreen {
+    display: inline !important;
+  }
+  transition: 0.4s all ease-in-out;
+}
+
+.fullscreen {
+  display: unset !important;
+  position: absolute;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

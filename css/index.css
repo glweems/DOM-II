@@ -350,3 +350,48 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+body {
+  transition: 0.4s all ease-in-out !important;
+}
+.logo-heading.active {
+  color: pink;
+}
+header {
+  transition: 0.4s all ease-in-out;
+}
+.darkmode {
+  background: #24222d;
+  color: #fcf4ef;
+}
+.darkmode a {
+  color: #fcf4ef !important;
+}
+.body-hide {
+  transition: 0.4s all ease-in-out;
+}
+.body-hide h1,
+.body-hide a,
+.body-hide p,
+.body-hide h2,
+.body-hide h4,
+.body-hide h3,
+.body-hide img,
+.body-hide nav,
+.body-hide .btn,
+.body-hide header {
+  display: none !important;
+}
+.body-hide * {
+  border: none !important;
+}
+.body-hide .fullscreen {
+  display: inline !important;
+}
+.fullscreen {
+  display: unset !important;
+  position: absolute;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
