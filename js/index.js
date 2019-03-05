@@ -3,7 +3,7 @@
 // # Logo Toggle Active Class
 logo = document.getElementsByClassName("logo-heading")[0];
 
-const toggleClass = {
+toggleClass = {
   add: function(el, val) {
     el.className += ` ${val}`;
   },
@@ -64,11 +64,17 @@ titles = body.getElementsByTagName("h4");
 
 for (let i = 0; i < images.length; i++) {
   images[i].setAttribute("draggable", "true");
-  // images[i].addEventListener("ondragstart", console.log("Stop That."));
 }
 
-// for (var property1 in object1) {
-//   string1 += object1[property1];
-// }
+buttons = body.getElementsByClassName("btn");
 
-console.log(titles);
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].onclick = function() {
+    if (!buttons[i].classList.contains("new-color")) {
+      buttons[i].classList += " new-color";
+    }
+    console.log(buttons[i]);
+  };
+}
+
+console.log(buttons);

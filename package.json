@@ -7,7 +7,7 @@
     "bs": "browser-sync start --server --files *.html, js/index.js --port 6969",
     "less": "less-watch-compiler less css index.less",
     "start": "concurrently \"npm run bs\" \"npm run less\"",
-    "now-build": "now"
+    "deploy": "now && now alias"
   },
   "repository": {
     "type": "git",
